@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         webView=findViewById(R.id.webview);
-        webView.loadUrl("https://www.flipkart.com/");
+        webView.loadUrl("https://www.google.com/");
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
