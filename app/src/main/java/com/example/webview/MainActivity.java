@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         webView=findViewById(R.id.webview);
         webView.loadUrl("https://www.google.com/");
+        webView.loadUrl("https://www.youtube.com/");//Using the youtube
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
