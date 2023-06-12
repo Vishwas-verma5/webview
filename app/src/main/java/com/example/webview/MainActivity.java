@@ -1,20 +1,25 @@
 package com.example.webview;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity {
-   WebView webView;
+    WebView webView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        webView=findViewById(R.id.webview);
+        webView = findViewById(R.id.webview);
         webView.loadUrl("https://www.facebook.com/");
+        webView.loadUrl("https://www.facebook.com/");
+        webView.loadUrl("https://www.facebook.com/");
+        webView.loadUrl("https://www.facebook.com/");
+
         webView.loadUrl("https://www.youtube.com/");//Using the youtube
         webView.setWebViewClient(new WebViewClient() {
             @Override
@@ -27,14 +32,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    public  void onBackPressed()
-    {
-        if (webView.canGoBack())
-        {
+
+    public void onBackPressed() {
+        if (webView.canGoBack()) {
             webView.goBack();
-        }
-        else
-        {
+        } else {
             super.onBackPressed();
         }
     }
